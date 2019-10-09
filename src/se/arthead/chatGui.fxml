@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="412.0" prefWidth="626.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="se.arthead.ChatController">
+   <children>
+      <VBox prefHeight="412.0" prefWidth="545.0" HBox.hgrow="ALWAYS">
+         <children>
+            <TextArea fx:id="txtOutput" editable="false" prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS" />
+            <TextField fx:id="txtInput" onAction="#sendMessage" promptText="Enter Chat Message" />
+         </children>
+      </VBox>
+      <ListView fx:id="lstUsers" maxWidth="200.0" prefHeight="200.0" prefWidth="200.0" />
+   </children>
+</HBox>
